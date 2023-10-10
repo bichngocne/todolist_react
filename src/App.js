@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Home, Login, Public } from "./containers/public";
+import { Home, Login, Personal, Public } from "./containers/public";
 import { Route, Routes } from "react-router-dom";
 import path from "./ultis/path";
 import { useEffect } from "react";
@@ -92,6 +92,7 @@ function App() {
             <Route path={path.HOME} element={<Home/>}/>
             <Route path={path.LOGIN} element={<Login/>}/>
             <Route path={path.STAR} element={<Home/>}/>
+            <Route path={path.MY_MUSIC} element={<Personal/>}/>
           </Route>
         </Routes>
       </div>
