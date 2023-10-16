@@ -10,7 +10,7 @@ const notActiveStyle =
 
 const SidebarLeft = () => {
   return (
-    <div>
+    <div className="h-full">
       <div className="w-full h-[70px] py-[15px] px-[25px] flex justify-start items-center">
         <img src={logo} alt={logo} className="w-[120px] h-10" />
       </div>

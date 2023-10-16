@@ -4,7 +4,19 @@ module.exports = {
   "./public/index.html"
 ],
   theme: {
-    extend: {},
+    extend: { 
+      backgroundColor:{
+        'sidebarleft':'#2c2537',
+        'main':'#221a2d',
+        'sidebarright':'#120822',
+        'player':'#130c1c',
+        
+      },
+    colors:{
+      'link-text-hover':' #c273ed',
+      'hover-circle':'hsla(0,0%,100%,.1)',
+    }
+    },
   },
   plugins: [],
 }
