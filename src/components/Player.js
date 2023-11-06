@@ -26,7 +26,7 @@ const Player = () => {
 
   useEffect(() => {
     const fetchDetailSong = async () => {
-      const response = await apis.getDetailSong(curSongId);
+      const response = await apis.apiGetDetailSong(curSongId);
       console.log(response);
       if (response.data.err === 0) {
         setsongInfo(response.data.data);
@@ -35,7 +35,7 @@ const Player = () => {
 
     fetchDetailSong();
   }, [curSongId]);
-
+  console.log(curSongId);
   useEffect(()=>{
   },[curSongId])
   const handelTogglePlayMusic = () => {

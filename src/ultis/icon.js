@@ -7,6 +7,7 @@ import {IoRepeatOutline} from 'react-icons/io5';
 import { RxTrackNext} from 'react-icons/rx';
 import { LiaStepBackwardSolid} from 'react-icons/lia';
 import {PiShuffle} from 'react-icons/pi'
+import {FiMusic} from 'react-icons/fi'
 const icons = {
   MdLibraryMusic,
   BsRecordCircle,
@@ -23,7 +24,8 @@ const icons = {
   LiaStepBackwardSolid,
   PiShuffle,
   BsPlayCircle,
-  BsPauseCircle
+  BsPauseCircle,
+  FiMusic
 };
 
 export default icons;

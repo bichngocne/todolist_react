@@ -4,15 +4,21 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { useDispatch, useSelector } from "react-redux";
 import * as actions from '../store/actions'
+import { useNavigate } from "react-router-dom";
 const Slider = () => {
   const { banner } = useSelector((state) => state.app);
   const dispatch = useDispatch()
-
+  const navigate = useNavigate()
 const handelClickBanner = (item) =>{
   console.log(item);
   if(item?.type === 1){
     dispatch(actions.setCurSongId(item.encodeId))
     dispatch(actions.play(true))
+  }else if(item?.type ===4){
+    console.log(item);
+    const albumPath = item?.link.split('.')[0]
+    // console.log(albumPath);
+    navigate(albumPath)
   }
 }
 
